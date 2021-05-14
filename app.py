@@ -15,7 +15,7 @@ def predict(model, input_df):
 def run():
 
     from PIL import Image
-    image_camp = Image.open('oil.jpeg')
+    image_camp = Image.open('oil.png')
 
     #st.image(image,use_column_width=False)
 
