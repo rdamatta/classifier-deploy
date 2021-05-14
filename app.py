@@ -92,7 +92,7 @@ def run():
         if output == 3:
             res = "Clear contamination needing immediate diagnostic and corrective action to prevent possible failure."
 
-        st.success(res)
+        st.success('{}'.format(res))
 
     if add_selectbox == 'Batch':
 
