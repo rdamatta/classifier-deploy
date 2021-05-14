@@ -85,11 +85,11 @@ def run():
             output = predict(model=model, input_df=input_df)
         if output == 0:
             res = "Oil properties are within acceptable limits and operation can continue as usual."
-        if output == 1:
+        elif output == 1:
             res = "Certain results are outside acceptable ranges, minor problems with machinery."
-        if output == 2:
+        elif output == 2:
             res = "Unsatisfactory results are present, significant problem with the compartment and lubricant properties."
-        if output == 3:
+        elif output == 3:
             res = "Clear contamination needing immediate diagnostic and corrective action to prevent possible failure."
 
         st.success('{}'.format(res))
