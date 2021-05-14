@@ -83,16 +83,16 @@ def run():
 
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
-        if output == 1:
-            res = "Certain results are outside acceptable ranges, minor problems with machinery."
-        elif output == 0:
+        if output == 'A':
             res = "Oil properties are within acceptable limits and operation can continue as usual."
-        elif output == 2:
+        elif output == 'B':
+            res = "Certain results are outside acceptable ranges, minor problems with machinery."
+        elif output == 'C':
             res = "Unsatisfactory results are present, significant problem with the compartment and lubricant properties."
-        elif output == 3:
+        elif output == 'X':
             res = "Clear contamination needing immediate diagnostic and corrective action to prevent possible failure."
 
-        st.success('{}'.format(res))
+        st.success('The outcome is: {}'.format(res))
 
     if add_selectbox == 'Batch':
 
