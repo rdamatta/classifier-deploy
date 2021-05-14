@@ -59,7 +59,7 @@ def run():
         input26 = st.selectbox('Vanadium', ['<1','1'])
         input27 = st.selectbox('Titanium', ['<1','1'])
         input28 = st.selectbox('Cadmium', ['<1','1','2', '3'])
-        input29 = st.number_input('Water Content', min_value=0, max_value=1, value=0.01)
+        input29 = st.number_input('Water Content', min_value=0.0, max_value=1.0, value=0.01)
         input30 = st.selectbox('Fluor', ['N', 'P'])
         input31 = st.number_input('Viscosity', min_value=60, max_value=400, value=207)
         input32 = st.number_input('Oxide Content', min_value=0, max_value=80, value=16)
